@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pirate Hoops Island Battle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="layout">
+    <header>
+      <h1>Pirate Hoops: Island Clash</h1>
+      <p>Real basketball stars become pirate captains and crews. Their ships race for the island, players disembark, and teams battle for control.</p>
+    </header>
+
+    <section class="hud">
+      <div id="status">Press <strong>Start Battle</strong> to launch the ships.</div>
+      <div class="controls">
+        <button id="startBtn">Start Battle</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div id="scoreboard" class="scoreboard"></div>
+    </section>
+
+    <canvas id="gameCanvas" width="1200" height="700" aria-label="Pirate game field"></canvas>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

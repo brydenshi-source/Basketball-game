@@ -1,0 +1,75 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0a1a2f;
+  color: #f4f8ff;
+}
+
+.layout {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  margin-top: 0;
+  opacity: 0.85;
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: 0;
+  background: #ffcc4d;
+  color: #1b1b1b;
+  font-weight: 700;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+#status {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.4rem;
+  padding: 0.55rem 0.7rem;
+}
+
+.scoreboard {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+canvas {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.6rem;
+  width: 100%;
+  height: auto;
+  background: #0d4f77;
+}
