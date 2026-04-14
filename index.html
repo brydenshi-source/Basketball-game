@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pirate Hoops Island Battle</title>
+  <title>Pirate Hoops Island War</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="layout">
     <header>
-      <h1>Pirate Hoops: Island Clash</h1>
-      <p>Real basketball stars become pirate captains and crews. Their ships race for the island, players disembark, and teams battle for control.</p>
+      <h1>Pirate Hoops: Island War</h1>
+      <p>Two pirate teams of real basketball superstars fight for an island fortress. Sail, bombard, disembark, and take control.</p>
     </header>
 
     <section class="hud">
-      <div id="status">Press <strong>Start Battle</strong> to launch the ships.</div>
+      <div id="status">Press <strong>Start Battle</strong>, then steer both ships and deploy your players onto the island.</div>
       <div class="controls">
         <button id="startBtn">Start Battle</button>
         <button id="resetBtn">Reset</button>
@@ -22,7 +22,27 @@
       <div id="scoreboard" class="scoreboard"></div>
     </section>
 
-    <canvas id="gameCanvas" width="1200" height="700" aria-label="Pirate game field"></canvas>
+    <section class="instructions">
+      <div>
+        <h2>Crimson Corsairs</h2>
+        <p><strong>Move:</strong> W A S D</p>
+        <p><strong>Fire cannons:</strong> F</p>
+        <p><strong>Disembark nearest player:</strong> Q</p>
+      </div>
+      <div>
+        <h2>Cobalt Cutlasses</h2>
+        <p><strong>Move:</strong> Arrow keys</p>
+        <p><strong>Fire cannons:</strong> L</p>
+        <p><strong>Disembark nearest player:</strong> /</p>
+      </div>
+      <div>
+        <h2>Win Conditions</h2>
+        <p>Eliminate all enemy players <em>or</em> hold island control for 25 seconds.</p>
+        <p>Players auto-fight after landing and can capture the fort zone.</p>
+      </div>
+    </section>
+
+    <canvas id="gameCanvas" width="1280" height="720" aria-label="Pirate island battlefield"></canvas>
   </main>
 
   <script src="game.js"></script>
